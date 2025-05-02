@@ -4,7 +4,6 @@ import NewsCard from './components/newscard';
 import axios from 'axios';
 
 function App() {
-  // const [count, setCount] = useState(0)
   const [activeTab, setActiveTab] = useState("top-stories");
   const [newsArr, setNewsArr] = useState([]);
   const feeds = [
@@ -132,7 +131,7 @@ function App() {
 												description={news.description}
 												pubDate={formatDate(news.pubDate)}
 											/>
-                      </div>
+                							</div>
 										</a>
 								  ))
 								: "No News to Display"}
